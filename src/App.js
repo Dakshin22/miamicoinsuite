@@ -2,10 +2,9 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Navbar from "./Navbar";
-import ChatConversation from "./pages/ChatConversation";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Workspaces from "./pages/Workspaces";
-import HelperChat from "./components/HelperChat";
+import WorkspacePage from './pages/workspacePage';
 const App = () => {
 
   return (
@@ -20,6 +19,7 @@ const App = () => {
             <Switch>
             
               <Route path="/" component={Workspaces} exact />
+              <Route path="/workspace/:id" component={WorkspacePage} exact />
             </Switch>
           </div>
           

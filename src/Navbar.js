@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" sticky="top" variant="dark" bg="dark">
       <Navbar.Brand as={Link} to="/">
-        AskMiamiCoin
+        Explore$MIA
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
