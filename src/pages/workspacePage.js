@@ -50,9 +50,6 @@ const WorkspacePage = ({ match }) => {
             <Card.Text>{workspace.description}</Card.Text>
             <Card.Text>Amenities: {workspace.amenities}</Card.Text>
             <ListGroup className="list-group-flush">
-              <ListGroupItem>
-                Non $MIA Holder Price: <strong>${workspace.price}</strong> Per Month
-              </ListGroupItem>
               <ListGroupItem>Location: {workspace.address}</ListGroupItem>
             </ListGroup>
           </Card.Body>

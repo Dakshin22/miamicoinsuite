@@ -17,7 +17,7 @@ function ChatPage() {
     >
 
       <iframe
-
+        style = {{border: "2px solid black", margin: "0"}} 
         title="titan"
         allow="microphone;"
         width="1000"
