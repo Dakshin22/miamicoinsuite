@@ -1,4 +1,4 @@
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Col, ListGroupItem, ListGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
 function WorkspaceCard(props) {
   return (
@@ -28,6 +28,10 @@ function WorkspaceCard(props) {
               {"..."}
             </Card.Text>
           </Card.Body>
+          <ListGroup className="list-group-flush">
+          <ListGroupItem>{props.copyright}</ListGroupItem>
+          <ListGroupItem>Date: {props.date}</ListGroupItem>
+        </ListGroup>
         </Card>
       </Col>
     </div>

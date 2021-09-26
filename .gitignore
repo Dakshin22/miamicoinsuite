@@ -2,8 +2,8 @@
 #API KEYS
 
 #SERVICES
-./services/workspacesService.js
-
+workspacesService.js
+.env
 # dependencies
 /node_modules
 /.pnp

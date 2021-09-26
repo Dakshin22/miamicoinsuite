@@ -4,25 +4,24 @@ import "./App.css";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Workspaces from "./pages/Workspaces";
-import WorkspacePage from './pages/workspacePage';
+import WorkspacePage from "./pages/workspacePage";
+import ChatPage from "./pages/ChatPage"
 const App = () => {
-
   return (
     <>
-    
       <Router>
         <div className="App">
-          
           <Navbar />
-          
+
           <div id="page-body">
             <Switch>
-            
               <Route path="/" component={Workspaces} exact />
-              <Route path="/workspace/:id" component={WorkspacePage} exact />
+
+              <Route path="/workspace/:id" component={WorkspacePage}/>
+              <Route path="/chat" component={ChatPage} />
             </Switch>
+
           </div>
-          
         </div>
       </Router>
     </>
