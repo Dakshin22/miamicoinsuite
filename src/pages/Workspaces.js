@@ -1,9 +1,9 @@
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import workspaces from "../services/workspacesService";
 import WorkspaceCard from "../components/WorkspaceCard";
 function Workspaces() {
   return (
-    <div>
+    <Container fluid>
       <Row xs={1} md={3} className="g-4">
         {workspaces.map((workspace, idx) => (
           <WorkspaceCard
@@ -21,7 +21,7 @@ function Workspaces() {
           />
         ))}
       </Row>
-    </div>
+    </Container>
   );
 }
 

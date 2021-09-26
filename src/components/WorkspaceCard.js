@@ -1,12 +1,13 @@
 import { Card, Col, ListGroupItem, ListGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { BsFillPeopleFill } from "react-icons/bs";
 function WorkspaceCard(props) {
   return (
     <div>
       <Col>
-        <Card>
+        <Card bg="light" text="black" className="text-center">
           <Link
-            style={{ textDecorationColor: "black" }}
+            
             to={`/workspace/${props.id}`}
             replace
           >
@@ -20,18 +21,19 @@ function WorkspaceCard(props) {
             />
           </Link>
           <Card.Body>
-            <Card.Title style={{ color: "black", listStyleType: "none" }}>
-              {props.title}
+            <Card.Title>
+              {props.title}{" "}<BsFillPeopleFill/> {props.accessed}
             </Card.Title>
-            <Card.Text style={{ color: "black", listStyleType: "none" }}>
-              {props.description.slice(0, 100)}
+            <Card.Text >
+              {props.description.slice(0, 200)}
               {"..."}
+              
+            </Card.Text>
+            <Card.Text >
+              Amenities: {props.amenities}
+              
             </Card.Text>
           </Card.Body>
-          <ListGroup className="list-group-flush">
-          <ListGroupItem>{props.copyright}</ListGroupItem>
-          <ListGroupItem>Date: {props.date}</ListGroupItem>
-        </ListGroup>
         </Card>
       </Col>
     </div>
