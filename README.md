@@ -1,3 +1,7 @@
+## Project Video
+
+https://youtu.be/wmrf_kDVMdo
+
 ## Inspiration
 ExploreMiamiCoin was inspired by my struggle in understanding what MiamiCoin was and how it worked. As I did more research into CityCoins and MiamiCoin, I realized that MiamiCoin was a great way to support your city and has the potential for some great benefits for coin holders. Realizing this, I wanted to create a platform that makes MiamiCoin, and its possible benefits simple and easy for anyone to understand.
 
